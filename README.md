@@ -1,3 +1,36 @@
-# testing
 
-Add some text here
+The program compute-average.pl is a pure Python application based upon 
+Python 2.7.5 on CentOS 7.3.1161
+
+Running the program with:
+
+python compute_average.py
+
+
+Run with no flags the script will capture the data and print out the monthly
+expense and income data along with the average over all of the months. The
+average does not include the last (incomplete) month. The output format is JSON.
+
+
+The allowed command line flags are:
+
+--help which will print out the available options
+
+--ignore-donuts which will exclude all donute expences from the averages
+
+--crystal-ball which dowloads the projected transaction dataset and cobines it
+       with the existing data to compute a new average, In this case the
+       incomplete data from the last month is combined with the projection to 
+       compute the average.
+
+--ignore-cc-payments tries to isolate the credit card credits and debits.
+       The transactions are identified by looking at the merchant label for two
+       values 'CC Payment' and 'Credit Card Payment'. As these items appear not
+       to be prfectly paired the script will print a warning if it detects 
+       "orphan" transactions of either type. A list of both the paired and
+       orphan transactions is written to te file 'cred_card_payments'.
+       Currently the orphans are also exclude from the average calculations
+       when this flag is picked.
+
+
+Also there are a few unit tests that you can run with python test.py
