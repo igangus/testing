@@ -8,8 +8,8 @@ Running the program with:
 
 
 Run with no flags the script will capture the data and print out the monthly
-expense and income data along with the average over all of the months. The
-average does not include the last (incomplete) month. The output format is JSON.
+expense and income data along with the monthly average. The average does
+not include the last (incomplete) month. The output format is JSON.
 
 
 The allowed command line flags are:
@@ -28,10 +28,10 @@ The allowed command line flags are:
        values 'CC Payment' and 'Credit Card Payment'. As these items appear not
        to be perfectly paired the script will print a warning if it detects 
        "orphan" transactions of either type. A list of both the paired and
-       orphan transactions is written to te file 'credit_card_payments'.
-       Currently the orphans are also exclude from the average calculations
+       orphan transactions is written to the file 'credit_card_payments'.
+       Currently the orphans are also excluded from the average calculations
        when this flag is picked. Note that just looking for the pairing of an
-       expense and credit with a 24 hour period would no detect the orphans
+       expense and credit with a 24 hour period would not detect the orphans
 
 
 Also there are a few unit tests that you can run with `python test.py`
