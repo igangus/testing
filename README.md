@@ -1,5 +1,5 @@
 
-The program compute-average.pl is a pure Python application based upon 
+The program compute_average.py is a pure Python application based upon 
 Python 2.7.5 on CentOS 7.3.1161
 
 Running the program with:
