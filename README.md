@@ -9,8 +9,8 @@ Running the program with:
 
 Run with no flags the script will capture the data and print out the monthly
 expense and income data along with the monthly average. The average does
-not include the last (incomplete) month. If there were no transaction is a
-month the month will be skipped in the output. The output format is JSON.
+not include the last (incomplete) month. If there were no transactions in a
+month that month will be skipped in the output.
 
 
 The allowed command line flags are:
